@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  rabbitmq:
+    image: 'bitnami/rabbitmq:latest'
+    environment:
+      - RABBITMQ_USERNAME=user
+      - RABBITMQ_PASSWORD=password
+    ports:
+      - '4369:4369'
+      - '5551:5551'
+      - '5552:5552'
+      - '5672:5672'
+      - '25672:25672'
+      - '15672:15672'
+    networks:
+      - test-app
+
+  it-test-producer:
+    image: ${DOCKER_REGISTRY-}ittestproducer
+    build:
+      context: .
+      dockerfile: it-test-producer/Dockerfile
+    networks:
+      - test-app
+
+networks:
+  test-app:
+    driver: bridge
