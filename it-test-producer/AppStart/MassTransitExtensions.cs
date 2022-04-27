@@ -1,4 +1,4 @@
-﻿using it_test_producer.Options;
+﻿using it_test_shared_contracts.Options;
 using MassTransit;
 
 namespace it_test_producer.AppStart

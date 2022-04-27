@@ -1,4 +1,4 @@
-﻿namespace it_test_producer.Options
+﻿namespace it_test_shared_contracts.Options
 {
     public class RabbitMqOptions
     {
