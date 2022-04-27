@@ -1,4 +1,4 @@
-﻿namespace it_test_consumer.Models
+﻿namespace it_test_consumer.Data.Models
 {
     public class OrgUser
     {

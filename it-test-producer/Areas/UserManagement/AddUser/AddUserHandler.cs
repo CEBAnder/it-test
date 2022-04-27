@@ -25,7 +25,7 @@ namespace it_test_producer.Areas.UserManagement.AddUser
 
             await _publishEndpoint.Publish(user);
 
-            _logger.Information($"Got user: {JsonSerializer.Serialize(user)}");
+            _logger.Information($"Produced user: {JsonSerializer.Serialize(user)} to RabbitMq");
 
             return Unit.Value;
         }

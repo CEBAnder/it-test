@@ -1,4 +1,5 @@
 using it_test_consumer.AppStart;
+using it_test_consumer.Data.Extensions;
 using MediatR;
 using Serilog;
 
@@ -12,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMediatR(typeof(Program));
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddMassTransit(builder.Configuration);
+builder.Services.AddDatabase(builder.Configuration);
 builder.Host.UseSerilog((context, services, configuration) => configuration.WriteTo.Console());
 
 var app = builder.Build();
