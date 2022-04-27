@@ -1,5 +1,6 @@
 using it_test_consumer.AppStart;
 using it_test_consumer.Data.Extensions;
+using it_test_consumer.Infrastructure;
 using MediatR;
 using Serilog;
 
@@ -23,6 +24,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 
