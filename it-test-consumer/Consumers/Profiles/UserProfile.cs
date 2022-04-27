@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using it_test_consumer.Data.Models;
-using it_test_shared_contracts.Models;
 
 namespace it_test_consumer.Consumers.Profiles
 {
@@ -8,7 +6,7 @@ namespace it_test_consumer.Consumers.Profiles
     {
         public UserProfile()
         {
-            CreateMap<User, OrgUser>();
+            CreateMap<it_test_shared_contracts.Models.User, Data.Models.User>();
         }
     }
 }

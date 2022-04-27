@@ -20,7 +20,7 @@ namespace it_test_producer.Controllers
         {
             await _mediator.Send(request);
 
-            return Ok("User was added");
+            return Ok("User was processed");
         }
     }
 }

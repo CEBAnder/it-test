@@ -21,10 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\it-test-consumer.Data\it-test-consumer.Data.csproj" />
     <ProjectReference Include="..\it-test-shared-contracts\it-test-shared-contracts.csproj" />
   </ItemGroup>

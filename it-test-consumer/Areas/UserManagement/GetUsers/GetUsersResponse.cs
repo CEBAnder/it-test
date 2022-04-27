@@ -1,10 +1,8 @@
-﻿namespace it_test_consumer.Data.Models
+﻿namespace it_test_consumer.Areas.UserManagement.GetUsers
 {
-    public class OrgUser
+    public class GetUsersResponse
     {
-        public int Id { get; init; }
-
-        public int? OrgId { get; init; }
+        public string? OrgName { get; init; }
 
         public string Name { get; init; } = string.Empty;
 
