@@ -23,7 +23,7 @@ namespace it_test_producer.Areas.UserManagement.AddUser
         {
             var user = _mapper.Map<User>(request);
 
-            await _publishEndpoint.Publish(user);
+            await _publishEndpoint.Publish(user, cancellationToken);
 
             _logger.Information($"Produced user: {JsonSerializer.Serialize(user)} to RabbitMq");
 
