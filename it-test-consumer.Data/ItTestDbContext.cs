@@ -6,9 +6,13 @@ namespace it_test_consumer.Data
 {
     public class ItTestDbContext : DbContext
     {
-        public DbSet<User> Users => Set<User>();
+        public virtual DbSet<User> Users => Set<User>();
 
-        public DbSet<Organisation> Organisations => Set<Organisation>();
+        public virtual DbSet<Organisation> Organisations => Set<Organisation>();
+
+        public ItTestDbContext()
+        {
+        }
 
         public ItTestDbContext(DbContextOptions<ItTestDbContext> options) : base(options)
         {

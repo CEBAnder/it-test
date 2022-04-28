@@ -1,5 +1,4 @@
-﻿using it_test_consumer.Data.Models;
-using MediatR;
+﻿using MediatR;
 
 namespace it_test_consumer.Areas.UserManagement.GetUsers
 {
