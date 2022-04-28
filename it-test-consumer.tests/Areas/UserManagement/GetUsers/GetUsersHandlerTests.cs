@@ -64,6 +64,18 @@ namespace it_test_consumer.tests.Areas.UserManagement.GetUsers
             result.Count().Should().Be(MaxNumberOfUsers);
         }
 
+        [Fact]
+        public async Task Handle_ShoudReturnCorrectNumberOfElements_WhenOffsetsEnoughElements()
+        {
+            var request = new GetUsersRequest { PageSize = 15, PageNumber = 7 };
+
+            // Act
+            var result = await _handler.Handle(request, CancellationToken.None);
+
+            // Assert
+            result.Count().Should().Be(10);
+        }
+
         private IEnumerable<User> GenerateUsers()
         {
             return new Fixture().CreateMany<User>(MaxNumberOfUsers);
