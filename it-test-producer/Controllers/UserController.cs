@@ -15,6 +15,11 @@ namespace it_test_producer.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Add user
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> AddUser([FromBody] AddUserRequest request)
         {

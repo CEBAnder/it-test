@@ -15,7 +15,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "it-test-consumer.Data", "it
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "it-test-producer.tests", "it-test-producer.tests\it-test-producer.tests.csproj", "{7148CDDF-8D05-4F60-922E-642E77DE6946}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "it-test-consumer.tests", "it-test-consumer.tests\it-test-consumer.tests.csproj", "{6986CF93-9C4E-4E56-ADBF-5BF295EA21BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "it-test-consumer.tests", "it-test-consumer.tests\it-test-consumer.tests.csproj", "{6986CF93-9C4E-4E56-ADBF-5BF295EA21BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{43FE1C6C-12AF-4960-98F7-7777FCDFEDAE}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

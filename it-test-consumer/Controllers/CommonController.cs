@@ -16,6 +16,11 @@ namespace it_test_consumer.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Bind user to organisation
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPost("bind-org-user")]
         public async Task<IActionResult> BindOrgUser([FromBody]BindOrgUserRequest request)
         {
@@ -24,6 +29,11 @@ namespace it_test_consumer.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Get users page
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpGet("users")]
         public async Task<IActionResult> GetUsers([FromQuery]GetUsersRequest request)
         {
